@@ -11,6 +11,7 @@ import TimelineSection from '@/components/organisms/TimelineSection';
 import LoveNotesSection from '@/components/organisms/LoveNotesSection';
 import FinalMessageSection from '@/components/organisms/FinalMessageSection';
 import ParticleAnimation from '@/components/molecules/ParticleAnimation';
+import HeartRain from '@/components/molecules/HeartRain';
 import MusicPlayer from '@/components/molecules/MusicPlayer';
 import Navigation from '@/components/molecules/Navigation';
 import FloatingNavDots from '@/components/molecules/FloatingNavDots';

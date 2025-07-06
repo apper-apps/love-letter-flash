@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import ApperIcon from '@/components/ApperIcon';
 import Text from '@/components/atoms/Text';
-
+import HeartRain from '@/components/molecules/HeartRain';
 const LandingSection = () => {
   const [showScroll, setShowScroll] = useState(false);
 
@@ -15,9 +15,12 @@ const LandingSection = () => {
   }, []);
 
   return (
-    <section id="landing" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+<section id="landing" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-misty-rose via-white to-lavender-blush" />
+      
+      {/* Interactive Heart Rain */}
+      <HeartRain />
       
       {/* Content */}
       <div className="relative z-10 text-center px-4">
