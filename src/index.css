@@ -84,7 +84,6 @@ animation: shimmer 1.5s ease-in-out infinite;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -197,7 +196,6 @@ animation: shimmer 1.5s ease-in-out infinite;
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 12px;
   display: flex;
@@ -222,7 +220,8 @@ animation: shimmer 1.5s ease-in-out infinite;
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .lightbox-content {
@@ -293,6 +292,7 @@ animation: shimmer 1.5s ease-in-out infinite;
 }
 
 /* Responsive adjustments */
+/* Responsive adjustments */
 @media (max-width: 480px) {
   .flip-card-front, .flip-card-back {
     padding: 16px;
@@ -300,5 +300,127 @@ animation: shimmer 1.5s ease-in-out infinite;
   
   .typewriter {
     font-size: 18px;
+  }
+}
+/* Custom Cursor Styles */
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease;
+}
+
+.cursor-heart {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9997;
+  transform: translate(-50%, -50%);
+}
+
+/* Countdown Display Styles */
+.countdown-display {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translateX(-50%);
+}
+
+.countdown-content {
+  background: linear-gradient(135deg, rgba(255, 105, 180, 0.95), rgba(255, 20, 147, 0.95));
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 12px 16px;
+  box-shadow: 0 8px 32px rgba(255, 105, 180, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-width: 200px;
+  text-align: center;
+}
+
+.countdown-title {
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 4px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 32px;
+}
+
+.countdown-number {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-label {
+  font-size: 10px;
+  font-weight: 400;
+  opacity: 0.9;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.countdown-separator {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.8;
+  margin: 0 2px;
+}
+
+/* Hide default cursor when custom cursor is active */
+@media (hover: hover) and (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+  
+  a, button, input, textarea, select {
+    cursor: none !important;
+  }
+}
+
+/* Mobile responsive cursor adjustments */
+@media (max-width: 768px) {
+  .custom-cursor,
+  .cursor-heart,
+  .countdown-display {
+    display: none;
+  }
+  
+  * {
+    cursor: default !important;
+  }
+}
+
+/* Ensure cursor works over all elements */
+.custom-cursor {
+  mix-blend-mode: difference;
+}
+
+/* Cursor hover effects for interactive elements */
+@media (hover: hover) and (pointer: fine) {
+  a:hover ~ .custom-cursor,
+  button:hover ~ .custom-cursor,
+  input:hover ~ .custom-cursor,
+  textarea:hover ~ .custom-cursor,
+  select:hover ~ .custom-cursor {
+transform: translate(-50%, -50%) scale(1.5);
   }
 }

@@ -15,6 +15,7 @@ import HeartRain from '@/components/molecules/HeartRain';
 import MusicPlayer from '@/components/molecules/MusicPlayer';
 import Navigation from '@/components/molecules/Navigation';
 import FloatingNavDots from '@/components/molecules/FloatingNavDots';
+import CustomCursor from '@/components/molecules/CustomCursor';
 import Loading from '@/components/ui/Loading';
 
 const App = () => {
@@ -54,10 +55,11 @@ const App = () => {
     return <Loading />;
   }
 
-  return (
+return (
     <Router>
       <div className="min-h-screen bg-gradient-to-br from-misty-rose via-white to-lavender-blush">
-<ParticleAnimation />
+        <ParticleAnimation />
+        <CustomCursor />
         <MusicPlayer />
         <Navigation currentSection={currentSection} />
         <FloatingNavDots currentSection={currentSection} />
