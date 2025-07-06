@@ -404,8 +404,12 @@ animation: shimmer 1.5s ease-in-out infinite;
     display: none;
   }
   
-  * {
+* {
     cursor: default !important;
+  }
+  
+  .countdown-display-fixed {
+    display: none;
   }
 }
 
@@ -421,6 +425,43 @@ animation: shimmer 1.5s ease-in-out infinite;
   input:hover ~ .custom-cursor,
   textarea:hover ~ .custom-cursor,
   select:hover ~ .custom-cursor {
-transform: translate(-50%, -50%) scale(1.5);
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
+/* Fixed Countdown Display Styles */
+.countdown-display-fixed {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .countdown-display-fixed {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .countdown-content {
+    padding: 8px 12px;
+    min-width: 160px;
+  }
+  
+  .countdown-title {
+    font-size: 10px;
+  }
+  
+  .countdown-number {
+    font-size: 14px;
+  }
+  
+  .countdown-label {
+    font-size: 8px;
+  }
+  
+  .countdown-separator {
+    font-size: 12px;
   }
 }

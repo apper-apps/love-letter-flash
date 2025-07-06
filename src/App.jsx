@@ -16,6 +16,7 @@ import MusicPlayer from '@/components/molecules/MusicPlayer';
 import Navigation from '@/components/molecules/Navigation';
 import FloatingNavDots from '@/components/molecules/FloatingNavDots';
 import CustomCursor from '@/components/molecules/CustomCursor';
+import CountdownDisplay from '@/components/molecules/CountdownDisplay';
 import Loading from '@/components/ui/Loading';
 
 const App = () => {
@@ -57,9 +58,10 @@ const App = () => {
 
 return (
     <Router>
-      <div className="min-h-screen bg-gradient-to-br from-misty-rose via-white to-lavender-blush">
+<div className="min-h-screen bg-gradient-to-br from-misty-rose via-white to-lavender-blush">
         <ParticleAnimation />
         <CustomCursor />
+        <CountdownDisplay />
         <MusicPlayer />
         <Navigation currentSection={currentSection} />
         <FloatingNavDots currentSection={currentSection} />
