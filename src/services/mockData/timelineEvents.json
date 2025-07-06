@@ -1,0 +1,66 @@
+[
+  {
+    "Id": 1,
+    "date": "March 15, 2023",
+    "title": "First Coffee Date",
+    "description": "We met at that little coffee shop downtown. You ordered a caramel latte and I knew I was in trouble when you smiled.",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=100&h=100&fit=crop",
+    "side": "left"
+  },
+  {
+    "Id": 2,
+    "date": "March 28, 2023",
+    "title": "Our First Kiss",
+    "description": "Under the cherry blossoms in the park. It was perfect timing, just like everything else about us.",
+    "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=100&h=100&fit=crop",
+    "side": "right"
+  },
+  {
+    "Id": 3,
+    "date": "April 12, 2023",
+    "title": "Made It Official",
+    "description": "The day you said yes to being my girlfriend. I was so nervous, but your smile made everything perfect.",
+    "image": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=100&h=100&fit=crop",
+    "side": "left"
+  },
+  {
+    "Id": 4,
+    "date": "May 20, 2023",
+    "title": "First 'I Love You'",
+    "description": "During our movie night. You whispered it during the credits, and my heart nearly exploded with happiness.",
+    "image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=100&h=100&fit=crop",
+    "side": "right"
+  },
+  {
+    "Id": 5,
+    "date": "June 15, 2023",
+    "title": "Weekend Getaway",
+    "description": "Our first trip together to the beach. Sunsets, long walks, and falling even more in love with you.",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=100&h=100&fit=crop",
+    "side": "left"
+  },
+  {
+    "Id": 6,
+    "date": "August 3, 2023",
+    "title": "Meeting Your Family",
+    "description": "The day I met your parents. Your mom made the best apple pie, and your dad told the funniest stories.",
+    "image": "https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=100&h=100&fit=crop",
+    "side": "right"
+  },
+  {
+    "Id": 7,
+    "date": "October 31, 2023",
+    "title": "Halloween Costume Contest",
+    "description": "We dressed up as superheroes and won first place! You looked absolutely amazing in your costume.",
+    "image": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=100&h=100&fit=crop",
+    "side": "left"
+  },
+  {
+    "Id": 8,
+    "date": "December 25, 2023",
+    "title": "First Christmas Together",
+    "description": "Exchanging gifts by the fireplace. The sweater you knitted me is still my favorite thing to wear.",
+    "image": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=100&h=100&fit=crop",
+    "side": "right"
+  }
+]
