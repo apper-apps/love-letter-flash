@@ -13,6 +13,7 @@ import FinalMessageSection from '@/components/organisms/FinalMessageSection';
 import ParticleAnimation from '@/components/molecules/ParticleAnimation';
 import MusicPlayer from '@/components/molecules/MusicPlayer';
 import Navigation from '@/components/molecules/Navigation';
+import FloatingNavDots from '@/components/molecules/FloatingNavDots';
 import Loading from '@/components/ui/Loading';
 
 const App = () => {
@@ -55,10 +56,10 @@ const App = () => {
   return (
     <Router>
       <div className="min-h-screen bg-gradient-to-br from-misty-rose via-white to-lavender-blush">
-        <ParticleAnimation />
+<ParticleAnimation />
         <MusicPlayer />
         <Navigation currentSection={currentSection} />
-        
+        <FloatingNavDots currentSection={currentSection} />
         <AnimatePresence mode="wait">
           <Routes>
             <Route path="/" element={

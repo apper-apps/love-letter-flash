@@ -48,6 +48,30 @@ html {
   animation: shimmer 1.5s ease-in-out infinite;
 }
 
+/* Floating navigation dots */
+.floating-dot-active {
+  animation: dotPulse 2s ease-in-out infinite;
+}
+
+@keyframes dotPulse {
+  0%, 100% { 
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 105, 180, 0.7);
+  }
+  50% { 
+    transform: scale(1.1);
+    box-shadow: 0 0 0 6px rgba(255, 105, 180, 0);
+  }
+}
+
+@media (max-width: 640px) {
+  .floating-nav-dots {
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 /* Toast customization */
 .Toastify__toast-container {
   z-index: 9999;
